@@ -1,0 +1,47 @@
+Soal 1:
+Kalkulasi grade A, B, C, D, E tergantung nilai murid, jika nilai 
+100 – 85 grade A
+84 – 75 grade B
+74 – 65 grade C
+64 – 55 grade D
+54 – 0 grade E
+
+PSEUDOCODE
+SIMPAN “skor” value 0
+SIMPAN “grade” value Grade A
+SIMPAN “grade” value Grade B
+SIMPAN “grade” value Grade C
+SIMPAN “grade” value Grade D
+If nilai >= 85 & < 100
+Display “Grade = A” 
+If nilai >= 75 & score < 85
+Display “Grade = B” 
+If nilai >= 65 & score < 75
+Display “Grade = C” 
+If nilai <= 55 & nilai < 65
+Display “Grade = D”
+If nilai =  & nilai < 55
+Display “Grade = E”
+
+
+
+JS
+var nilai = prompt("nilai murid")
+var skor = Number(nilai)
+
+var grade;
+
+if (skor >= 85 & skor <= 100) {
+  grade = "A"
+} else if (skor >= 75 & skor < 85) {
+  grade = "B"
+} else if (skor >= 65 & skor < 75) {
+  grade = "C"
+} else if (skor >= 55 & skor < 65) {
+  grade = "D"
+} else if (skor >= 0 & skor < 55) {
+  grade = "E"
+}
+
+console.log(grade)
+ 
