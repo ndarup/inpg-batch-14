@@ -1,0 +1,42 @@
+header {
+    background-color: aqua;
+    margin: 20px 50px;
+}
+
+header img {
+    size: 50px;
+    float: center;
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    float: right;
+    display: inline-block;
+}
+article {
+    background-color:gainsboro;
+    margin: 20px 50px;  
+}
+
+article a {
+    text-decoration: none
+}
+h3 {
+    margin: 20px 50px;
+    font-size: 25px;
+    text-decoration-line: none;
+}
+p {
+    color: orange;
+    margin: 20px 50px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;  
+}
+header nav ul li {
+    display: inline-block;
+    margin: 30px;
+    font-family: 'Oswald', sans-serif;
+    
+}
