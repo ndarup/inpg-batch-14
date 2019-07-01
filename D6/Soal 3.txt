@@ -1,0 +1,18 @@
+Soal 3
+Tampilkan 1-100 namun tampilkan angka ganjil dan genap disebelah angkanya
+gunakan while dan for loop
+contoh 
+1- angka ganjil
+2- angka genap
+3- angka ganjil 
+dan seterusnya
+
+JS
+// var angka1 = 1;
+// var angka2 = 2;
+// while(angka1 & angka2 <=50) {
+//   console.log(angka1 + " - Angka Ganjil")
+//   console.log(angka2 + " - Angka Genap")
+//   angka1 += 2
+//   angka2 += 2
+// }

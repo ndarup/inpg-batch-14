@@ -1,0 +1,29 @@
+Soal 1
+Sebuah restoran hanya dapat menampung 50 org. Setiap meja hanya dapat menampung 3 org. Hitung sisa orang yang tidak duduk dan berapa meja yg terpakai.
+
+PSEUDOCODE
+SIMPAN “orang” value = 0
+SIMPAN “meja” value = 0
+SIMPAN “sisaOrang” 
+WHILE orang < 50
+CALCULATE meja 
+
+CALCulaTE sisaOrang mod 3
+DISPLAY meja dan sisaOrang
+
+JS
+// var orang = 0;
+// var sisaOrang;
+// var mejaTerpakai = 0
+// while(orang<50) {
+//   mejaTerpakai++
+//   orang += 3
+// }
+// sisaOrang = 50%3
+// console.log(mejaTerpakai, sisaOrang)
+
+for (var orang = 0 var sisaOrang; var mejaTerpakai = 0)
+
+    console.log("mejaTerpakai" = mejaTerpakai++)
+    console.log("sisaOrang" = 50%3 )
+

@@ -1,0 +1,13 @@
+Soal 2
+Looping angka 1-50 dan tampilkan angkanya. Gunakan while dan for loop
+
+JS
+// var angka = 1;
+// while(angka <= 50) { 
+//   console.log(+ angka); 
+//   angka++;
+// }
+
+// for(var angka = 1; angka <= 50; angka++) {
+//   console.log(+ angka);
+// }
