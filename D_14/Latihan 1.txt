@@ -1,0 +1,75 @@
+1) SOAL 1
+function compareNumbers (firstNumber, secondNumber) {
+  for(i=0; i<100; i++){
+   if(secondNumber > firstNumber){
+     var hasil = true;
+   }else if(secondNumber < firstNumber){
+     hasil = false;
+   }else if(secondNumber === firstNumber){
+     hasil = -1;
+   } else {
+     console.log("Masukan Nilai rentang 1- 100")
+   }  
+  } 
+  return hasil;
+}
+
+// TEST CASES
+console.log(compareNumbers(5, 8)); // true
+console.log(compareNumbers(5, 3)); // false
+console.log(compareNumbers(4, 4)); // -1
+console.log(compareNumbers(3, 3)); // -1
+console.log(compareNumbers(17, 2)); // false
+
+2) SOAL 2
+function reverseString (text) {
+  var arr = []
+  for(i=text.length; i>=0; i--){
+    arr.push(text[i]);
+  }
+  return arr.join('')
+}
+
+// TEST CASES
+console.log(reverseString("Hello World and Coders"));// sredoC dna dlroW olleH
+console.log(reverseString('John Doe')); // eoD nhoJ
+console.log(reverseString('I am a bookworm')); // mrowkoob a ma I
+console.log(reverseString('Coding is my hobby')); // ybboh ym si gnidoC
+console.log(reverseString('Super')); // repuS
+
+3)SOAL 3
+function sortByCharacter(str)
+  {
+return str.split('').sort().join('');
+  }
+
+// TEST CASES
+console.log(sortByCharacter('hello')); // 'ehllo'
+console.log(sortByCharacter('truncate')); // 'acenrttu'
+console.log(sortByCharacter('developer')); // 'deeeloprv'
+console.log(sortByCharacter('software')); // 'aeforstw'
+console.log(sortByCharacter('aegis')); // 'aegis'
+
+4)SOAL 4
+var arr1 =[2, 4, 6, 12, 24];
+var arr2 =[1, 2, 3, 4, 5, 6];
+var arr3 =[2, 4, 6, 12, 24];
+var arr4 =[2, 4, 6, 8];
+var arr5 =[2, 6, 18, 54];
+var arr6 =[1, 2, 3, 4, 7, 9];
+var number=0;
+    function isArithmeticProgression(arr){
+        for (var i=0;i<arr.length-2;i++){
+             if(arr[i+1]-arr[i]===arr[i+2]-arr[i+1]){
+                 number++;
+            }
+            else return false;
+        }
+        return true;
+     }    
+ console.log(isArithmeticProgression(arr1));
+ console.log(isArithmeticProgression(arr2));
+ console.log(isArithmeticProgression(arr3));
+ console.log(isArithmeticProgression(arr4));
+ console.log(isArithmeticProgression(arr5));
+ console.log(isArithmeticProgression(arr6));
