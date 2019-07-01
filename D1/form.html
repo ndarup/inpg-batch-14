@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D1_Form</title>
+    </head>
+    <body>
+        <div>
+            <h1>Form Registration Program</h1>
+              <form>
+                  <p>
+                    <label for="programming">Apakah anda tertarik untuk mengikuti kelas ini?</label>
+                    <input type="text" name="programming" list="programmingLangs" />
+                    <datalist id="programmingLangs">
+                      <select name="altProgrammingLangs">
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                      </select>
+                    </datalist>
+                  </p>
+                </form>
+                  <p>
+                <form>
+                    <label for="Jenis Kelamin">Jenis Kelamin:</label>
+                    <input id="male-radio" type="radio" name="gender" value="male">
+                    <label for="male-radio">Laki-Laki</label>
+                    <input id="female-radio" type="radio" name="gender" value="female">
+                    <label for="female-radio">Perempuan</label>
+                  </form>
+                  </p>
+                  <p>
+                  <form>
+                      <label for="skill">Skill yang diharapkan:</label>
+                      <input id="writing-checkbox" type="checkbox" name="skill" value="Basic Programming Language">
+                      <label for="writing-checkbox">Basic Programming Language</label>
+                      <input id="reading-checkbox" type="checkbox" name="skill" value="Others">
+                      <label for="reading-checkbox">Others</label>
+                  </form>
+                  </p>
+                  <form action="file:///C:/Users/SEA-Ndaru/Desktop/HACKTIV/D1/welcome.html" method="POST">
+                      <label>
+                        Apakah anda yakin:
+                        <input type="text" name="nama" />
+                      </label>
+                      <input type="submit" value="Submit" />
+                    </form>
+        </div>
+    </body>
+</html>
