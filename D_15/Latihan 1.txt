@@ -1,0 +1,36 @@
+Soal 1
+
+JS
+function threeStepsAB(num) {
+  // Your code here
+  for (var x = 0; x < num.length; x++) {
+    if (num[x] === 'a') {
+      for (var y = x; y < num.length; y++) {
+        if (num[y] === 'b') {
+          return x <= y ? true : false;
+        }
+      }
+    }
+  }
+  
+  return false;
+  
+}
+
+// TEST CASES
+console.log(threeStepsAB('lane borrowed')); // true
+console.log(threeStepsAB('i am sick')); // false
+console.log(threeStepsAB('you are boring')); // true
+console.log(threeStepsAB('barbarian')); // true
+console.log(threeStepsAB('bacon and meat')); // false
+
+
+
+atau 
+JS
+function threeStepsAB (text) {
+  var regex = /a...b/g
+  var threeStepsAB = regex.test (text)
+  
+  return threeStepsAB;
+}
