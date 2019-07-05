@@ -1,0 +1,42 @@
+Soal 1
+JS
+function grouping (scores) {
+  var pass =[];
+  var fail =[];
+  var hasil =[];
+  for(i=0; i<scores.length; i++){
+    if(scores[i] >= 75){
+      pass.push(scores[i])
+    }else{
+      fail.push(scores[i])
+    }
+  }
+  hasil[0] = "pass : " + pass
+  hasil[1] = "fail : " + fail
+  
+  return hasil;
+}
+
+console.log(grouping([80, 45, 90, 65, 74, 100, 85, 30]));
+// { pass: [ 80, 90, 100, 85 ], fail: [ 45, 65, 74, 30 ] }
+
+console.log(grouping([]));
+// { pass: [], fail: [] } 
+
+
+
+Soal 2
+JS
+function convert(data){
+  for(var i=0; i<data.length;i++){
+  }
+  return data
+}
+
+// TEST CASES
+console.log(convert([
+  [1, 'Dimitri', 'Wahyudiputra', 'dimitri@mail.com'],
+  [2, 'Sergei', 'Dragunov', 'sergei@mail.com']
+]));
+
+
