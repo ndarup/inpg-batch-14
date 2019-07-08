@@ -1,0 +1,79 @@
+SOAL 1
+JS
+function csvToObject (text) {
+  // Your code here
+ 
+ var split = text.split(",");
+  for(i=0; i<text.length; i++){
+  var input = {
+   name :split[0],
+   email :split[1],
+   gender :split[2], 
+   }
+  }
+ return input
+  
+    }
+  
+
+// TEST CASES
+console.log(csvToObject('Dimitri,dimitri@mail.com,male'));
+// { name: 'Dimitri', email: 'dimitri@mail.com', gender: 'male' }
+
+console.log(csvToObject('Icha,icha@mail.com,female'));
+// { name: 'Icha', email: 'icha@mail.com', gender: 'female' }
+
+console.log(csvToObject('Dhani,dhani@mail.com,male'));
+// { name: 'Dhani', email: 'dhani@mail.com', gender: 'male' }
+
+
+SOAL 2
+JS
+function deleteUndefinedKeys (object) {
+  // Your code here
+
+const newObject = Object.keys(object).reduce((acc, key) => {
+  const _acc = acc;
+  if (object[key] !== undefined) _acc[key] = object[key];
+  return _acc;
+}, {})
+
+console.log(newObject)
+}
+
+console.log(deleteUndefinedKeys({
+  name: 'Dimitri',
+  age: undefined,
+  email: 'dimitri@mail.com'
+}));
+// { name: 'Dimitri', email: 'dimitri@mail.com' }
+
+console.log(deleteUndefinedKeys({
+  name: undefined,
+  age: undefined,
+  email: undefined
+}));
+// {}
+
+
+3. SOAL 3
+JS
+function complexConversion (text) {
+  // Your code here
+
+var splitted = text.split(',')
+var tampung = {}
+
+for (i = 0; i<splitted.length; i++){
+var splitted2 = splitted[i].split(':')
+var key = splitted2[0];
+var value = splitted2[1];
+tampung[key]=value;
+  }
+  return tampung;
+}
+
+    
+    // TEST CASES
+console.log(complexConversion('name:Dimitri,email:dimitri@mail.com'));
+// { name: 'Dimitri', email: 'dimitri@mail.com' }
